@@ -34,6 +34,72 @@
     #binding-cells = <0>;
     bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
   };
+
+  bt_profile_1: bt_profile_1 {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    display-name = "Bluetooth Profile 1";
+    bindings =
+      <&bt BT_SEL 0>,
+      <&out OUT_BLE>,
+      <&bt BT_DISC 1>,
+      <&bt BT_DISC 2>,
+      <&bt BT_DISC 3>,
+      <&bt BT_DISC 4>;
+  };
+
+  bt_profile_2: bt_profile_2 {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    display-name = "Bluetooth Profile 2";
+    bindings =
+      <&bt BT_SEL 1>,
+      <&out OUT_BLE>,
+      <&bt BT_DISC 0>,
+      <&bt BT_DISC 2>,
+      <&bt BT_DISC 3>,
+      <&bt BT_DISC 4>;
+  };
+
+  bt_profile_3: bt_profile_3 {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    display-name = "Bluetooth Profile 3";
+    bindings =
+      <&bt BT_SEL 2>,
+      <&out OUT_BLE>,
+      <&bt BT_DISC 0>,
+      <&bt BT_DISC 1>,
+      <&bt BT_DISC 3>,
+      <&bt BT_DISC 4>;
+  };
+
+  bt_profile_4: bt_profile_4 {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    display-name = "Bluetooth Profile 4";
+    bindings =
+      <&bt BT_SEL 3>,
+      <&out OUT_BLE>,
+      <&bt BT_DISC 0>,
+      <&bt BT_DISC 1>,
+      <&bt BT_DISC 2>,
+      <&bt BT_DISC 4>;
+  };
+
+  bt_profile_5: bt_profile_5 {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    display-name = "Bluetooth Profile 5";
+    bindings =
+      <&bt BT_SEL 4>,
+      <&out OUT_BLE>,
+      <&bt BT_DISC 0>,
+      <&bt BT_DISC 1>,
+      <&bt BT_DISC 2>,
+      <&bt BT_DISC 3>;
+  };
+
   Win_Cut: Windows_Cut {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;

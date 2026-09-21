@@ -9,6 +9,14 @@
 
 Certain ZMK features (e.g. combos) require knowing the exact key positions in the matrix. They can be found in both image and text format [here](assets/key-positions.md)
 
+## Bluetooth profiles and USB output
+
+- `Mod+1` through `Mod+5` select Bluetooth profiles 1 through 5. Selecting a profile also prefers Bluetooth output and disconnects any inactive Bluetooth profiles, so another host does not continue treating the keyboard as connected.
+- `Mod+6` explicitly prefers USB output.
+- `Mod+7` explicitly prefers Bluetooth output.
+
+The output preference is saved by ZMK. If the preferred transport is unavailable, the keyboard automatically falls back to the available transport. For example, Bluetooth preference still allows USB data when the selected Bluetooth profile is not connected.
+
 ## Building the Firmware with GitHub Actions
 
 ### Setup
@@ -155,4 +163,3 @@ Further support resources can be found on Kinesis.com:
 
 In the event of a hardware issue it may be necessary to open a support ticket directly with Kinesis as opposed to a GitHub issue in this repository.
 * https://kinesis-ergo.com/support/kb360pro/#ticket
-
