@@ -11,7 +11,7 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 
 ## Bluetooth profiles and USB output
 
-- `Mod+1` through `Mod+5` select Bluetooth profiles 1 through 5. Selecting a profile also prefers Bluetooth output and disconnects any inactive Bluetooth profiles, so another host does not continue treating the keyboard as connected.
+- `Mod+1` through `Mod+5` select Bluetooth profiles 1 through 5. Selecting a profile also prefers Bluetooth output. After two seconds, the keyboard disconnects any inactive Bluetooth profiles so the selected host has time to reconnect before other hosts are removed.
 - `Mod+6` explicitly prefers USB output.
 - `Mod+7` explicitly prefers Bluetooth output.
 
