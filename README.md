@@ -11,13 +11,11 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 
 ## Bluetooth profiles and USB output
 
-- `Mod+1` selects the phone (profile 1) and keeps the PC connected.
-- `Mod+2` selects the PC (profile 2) and requests a disconnect from the phone, preserving its pairing. If the PC was asleep and the phone reconnects, press `Mod+2` again once the PC receives keystrokes over Bluetooth.
-- `Mod+3` through `Mod+5` select their profiles and leave other hosts connected.
+- `Mod+1` through `Mod+5` use the stock Kinesis Bluetooth profile selectors. Each selects its numbered profile. Other hosts can stay connected, and the output preference is preserved.
 - `Mod+6` explicitly prefers USB output.
 - `Mod+7` explicitly prefers Bluetooth output.
 
-All five profile shortcuts prefer Bluetooth output. After a settings reset, USB has priority when both transports are available. Press a profile shortcut or `Mod+7` and leave the keyboard powered for about 30 seconds so ZMK can save the Bluetooth preference. If the preferred transport is unavailable, the keyboard automatically falls back to the available transport.
+After a settings reset, USB has priority when both transports are available. Press `Mod+7` and leave the keyboard powered for about 30 seconds to save a preference for Bluetooth. If the preferred transport is unavailable, the keyboard falls back to the available transport.
 
 ## Building the Firmware with GitHub Actions
 
