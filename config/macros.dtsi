@@ -43,14 +43,7 @@
     tap-ms = <0>;
     bindings =
       <&bt BT_SEL 0>,
-      <&out OUT_BLE>,
-      <&macro_wait_time 2000>,
-      <&none>,
-      <&macro_wait_time 0>,
-      <&bt BT_DISC 1>,
-      <&bt BT_DISC 2>,
-      <&bt BT_DISC 3>,
-      <&bt BT_DISC 4>;
+      <&out OUT_BLE>;
   };
 
   bt_profile_2: bt_profile_2 {
@@ -62,13 +55,7 @@
     bindings =
       <&bt BT_SEL 1>,
       <&out OUT_BLE>,
-      <&macro_wait_time 2000>,
-      <&none>,
-      <&macro_wait_time 0>,
-      <&bt BT_DISC 0>,
-      <&bt BT_DISC 2>,
-      <&bt BT_DISC 3>,
-      <&bt BT_DISC 4>;
+      <&bt BT_DISC 0>;
   };
 
   bt_profile_3: bt_profile_3 {
@@ -79,14 +66,7 @@
     tap-ms = <0>;
     bindings =
       <&bt BT_SEL 2>,
-      <&out OUT_BLE>,
-      <&macro_wait_time 2000>,
-      <&none>,
-      <&macro_wait_time 0>,
-      <&bt BT_DISC 0>,
-      <&bt BT_DISC 1>,
-      <&bt BT_DISC 3>,
-      <&bt BT_DISC 4>;
+      <&out OUT_BLE>;
   };
 
   bt_profile_4: bt_profile_4 {
@@ -97,14 +77,7 @@
     tap-ms = <0>;
     bindings =
       <&bt BT_SEL 3>,
-      <&out OUT_BLE>,
-      <&macro_wait_time 2000>,
-      <&none>,
-      <&macro_wait_time 0>,
-      <&bt BT_DISC 0>,
-      <&bt BT_DISC 1>,
-      <&bt BT_DISC 2>,
-      <&bt BT_DISC 4>;
+      <&out OUT_BLE>;
   };
 
   bt_profile_5: bt_profile_5 {
@@ -115,14 +88,7 @@
     tap-ms = <0>;
     bindings =
       <&bt BT_SEL 4>,
-      <&out OUT_BLE>,
-      <&macro_wait_time 2000>,
-      <&none>,
-      <&macro_wait_time 0>,
-      <&bt BT_DISC 0>,
-      <&bt BT_DISC 1>,
-      <&bt BT_DISC 2>,
-      <&bt BT_DISC 3>;
+      <&out OUT_BLE>;
   };
 
   Win_Cut: Windows_Cut {

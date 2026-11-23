@@ -11,11 +11,13 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 
 ## Bluetooth profiles and USB output
 
-- `Mod+1` through `Mod+5` select Bluetooth profiles 1 through 5. Selecting a profile also prefers Bluetooth output. After two seconds, the keyboard disconnects any inactive Bluetooth profiles so the selected host has time to reconnect before other hosts are removed.
+- `Mod+1` selects the phone (profile 1) and keeps the PC connected.
+- `Mod+2` selects the PC (profile 2) and requests a disconnect from the phone, preserving its pairing. If the PC was asleep and the phone reconnects, press `Mod+2` again once the PC receives keystrokes over Bluetooth.
+- `Mod+3` through `Mod+5` select their profiles and leave other hosts connected.
 - `Mod+6` explicitly prefers USB output.
 - `Mod+7` explicitly prefers Bluetooth output.
 
-The output preference is saved by ZMK. If the preferred transport is unavailable, the keyboard automatically falls back to the available transport. For example, Bluetooth preference still allows USB data when the selected Bluetooth profile is not connected.
+All five profile shortcuts prefer Bluetooth output. After a settings reset, USB has priority when both transports are available. Press a profile shortcut or `Mod+7` and leave the keyboard powered for about 30 seconds so ZMK can save the Bluetooth preference. If the preferred transport is unavailable, the keyboard automatically falls back to the available transport.
 
 ## Building the Firmware with GitHub Actions
 
